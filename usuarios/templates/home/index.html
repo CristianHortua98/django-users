@@ -1,0 +1,6 @@
+<h1>Panel de usuario</h1>
+<h3>Bienvenido: {{ user.nombres }} {{ user.apellidos }}</h3>
+<ul>
+    <li><a href="{% url 'users_app:logout' %}">Cerrar Sesion</a></li>
+    <li><a href="{% url 'users_app:password-change' %}">Actualizar Contraseña</a></li>
+</ul>

@@ -33,7 +33,9 @@ DJANGO_APPS = [
 ]
 
 #APPS PROPIAS
-LOCAL_APPS = []
+LOCAL_APPS = [
+    'applications.users'
+]
 
 #APPS DE TERCEROS
 THIRD_PARTY_APPS = []
@@ -91,6 +93,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+#PARA ACTUALIZAR NUEVO MODELO DE USUARIOS
+AUTH_USER_MODEL = 'users.user'
 
 LANGUAGE_CODE = 'es-co'
 

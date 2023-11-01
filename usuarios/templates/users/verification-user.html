@@ -1,0 +1,7 @@
+<h1>Verificacion Email</h1>
+<h2>Ingrese el codigo de verificacion</h2>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Confirmar</button>
+</form>
