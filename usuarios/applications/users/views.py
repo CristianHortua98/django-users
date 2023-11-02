@@ -100,6 +100,7 @@ class CodeVerificationView(FormView):
     form_class = VerificationForm
     success_url = reverse_lazy('users_app:login')
 
+    #PASAMOS LOS KWARGS AL FORMULARIO
     def get_form_kwargs(self):
         kwargs = super(CodeVerificationView, self).get_form_kwargs()
         kwargs.update({
